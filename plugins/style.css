@@ -234,6 +234,9 @@ body {
 }
 
 @media (max-width: 1099px) {
+    html{
+        overflow: hidden;
+    }
     body {
         background-image: url(./images/bg_mb.jpg);
         background-size: 100% auto;
