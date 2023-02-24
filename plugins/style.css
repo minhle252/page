@@ -229,7 +229,7 @@ body {
 
 }
 
-.header_mb,.content_mb,.footer_mb, .footer_mb_navigate {
+.header_mb,.content_mb,.footer_mb, .footer_mb_navigate, .xu_top_right_mb,.icon_fly_mb,.poker_right_top_mb,.xu_left_mb {
     display: none;
 }
 
@@ -251,7 +251,7 @@ body {
     .block_dice_gold_right,.content {
         display: none;
     }
-    .header_mb,.content_mb,.footer_mb,.footer_mb_navigate{
+    .header_mb,.content_mb,.footer_mb,.footer_mb_navigate, .xu_top_right_mb,.icon_fly_mb,.poker_right_top_mb,.xu_left_mb{
         display: block;
     }
     .header_mb{
@@ -322,6 +322,35 @@ body {
     }
     .first_item{
         border-left: 2px solid #fff;
+    }
+    .xu_top_right_mb{
+        position: absolute;
+        width: 35vw;
+        top: -15vw;
+        right: -15vw;
+    }
+    .icon_fly_mb{
+        position: absolute;
+        top: 5vw;
+        right: 10vw;
+        background-color: #fff;
+        border-radius:30%;
+    }
+    .icon_fly_mb img{
+        border: 3px solid #fff;
+        border-radius:30%;
+    }
+    .poker_right_top_mb{
+        position: absolute;
+        width: 40vw;
+        top: 20vh;
+        right: -10vw;
+    }
+    .xu_left_mb{
+        position: absolute;
+        top: 20vh;
+        width: 20vw;
+        left: -10vw;
     }
 }
 @media (max-width: 563px) {
