@@ -308,6 +308,9 @@ body {
         z-index: 9999999;
         background-color: #0a0e39;
     }
+    .footer_mb_navigate > ul{
+        list-style-type: none;
+    }
     .footer_mb_navigate > ul > li:hover{
         opacity: 0.7;
     }
