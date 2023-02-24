@@ -1,8 +1,9 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     display: flex;
     background-color: #0a1956;
     justify-content: flex-end;
@@ -11,7 +12,8 @@ body{
     height: 100vh;
     overflow: hidden;
 }
-.main{
+
+.main {
     /* background-image: url(./images/bg-4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,14 +27,16 @@ body{
     width: 100vw;
     z-index: -1;
 }
-.xu{
+
+.xu {
     width: 40vh;
     height: 40vh;
     position: absolute;
     top: -14vh;
     right: -14vh;
 }
-.icon_fly{
+
+.icon_fly {
     height: 20vh;
     width: 20vh;
     position: absolute;
@@ -41,10 +45,12 @@ body{
     background-color: #fff;
     border-radius: 30%;
 }
-.icon_fly img{
+
+.icon_fly img {
     border: 5px solid #fff;
     border-radius: 30%;
 }
+
 .left_bg {
     position: absolute;
     height: 100vh;
@@ -53,6 +59,7 @@ body{
     left: 0;
     overflow: hidden;
 }
+
 .person {
     position: absolute;
     left: 0;
@@ -60,6 +67,7 @@ body{
     height: 60vh;
     z-index: 10;
 }
+
 .vertical_cen {
     position: absolute;
     width: 38vw;
@@ -67,7 +75,8 @@ body{
     left: 0;
     opacity: 0.3;
 }
-.xu_left{
+
+.xu_left {
     position: absolute;
     position: absolute;
     width: 248px;
@@ -75,24 +84,28 @@ body{
     bottom: 30vh;
     z-index: 9;
 }
-.xu_right_bottom{
+
+.xu_right_bottom {
     position: absolute;
     right: -15vh;
     bottom: -15vh;
     height: 40vh;
 }
+
 .poker_right_bottom {
     position: absolute;
     right: -24vh;
     height: 20vh;
     bottom: -2vh;
 }
-.block_dice{
+
+.block_dice {
     position: absolute;
     top: -5vh;
     left: 25vw;
     height: 20vh;
 }
+
 .block_dice_top_right {
     position: absolute;
     top: -9vh;
@@ -100,69 +113,89 @@ body{
     height: 20vh;
     opacity: 0.1;
 }
+
 .block_dice_gold_right {
     position: absolute;
     right: -2vh;
     height: 10vh;
     top: 35vh;
 }
-.content{
+
+.content {
     margin-right: 10vw;
+    position: relative;
+    z-index: 999;
 }
-.register{
+
+.register {
     font-size: 35px;
     font-weight: bold;
     border-radius: 100vh;
     color: #0a0e39;
 }
-.title_register{
-    font-size:60px;
+
+.title_register {
+    font-size: 60px;
     font-weight: bold;
 }
-.title_register > span {
+
+.title_register>span {
     color: #eaff00;
 }
-.account_title{
+
+.account_title {
     font-size: 30px;
     font-weight: 500;
 }
-.line_left{
+
+.line_left {
     margin-right: 30px;
     box-shadow: 13px 0px 0px 1px #fff;
 }
-.line_right, .line_left{
+
+.line_right,
+.line_left {
     border: 1px solid #fff;
     height: 0;
     width: 20%;
     border-radius: 50%;
 }
-.line_right{
+
+.line_right {
     margin-left: 30px;
     box-shadow: -13px 0px 0px 1px #fff;
 }
-.btn_dowload,.btn_plays {
+
+.btn_dowload,
+.btn_plays {
     border-radius: 100vh;
     box-shadow: 2px 2px 0px 1px #ff00d5;
 }
-.btn_dowload span, .btn_plays span{
+
+.btn_dowload span,
+.btn_plays span {
     font-size: 20px;
     font-weight: 700;
     padding: 0 1.2em;
     vertical-align: middle;
 }
-.btn_plays img{
+
+.btn_plays img {
     height: 50px;
 }
-.left_title{
+
+.left_title {
     color: #fff;
     font-size: 50px;
     font-weight: bold;
 }
-.bg_btn_pink:hover{
+
+.bg_btn_pink:hover {
     color: #fff;
     opacity: 0.8;
 }
-.bg_btn_pink{
+
+.bg_btn_pink {
     font-size: 25px;
     font-weight: bold;
     color: #fff;
@@ -172,15 +205,127 @@ body{
     padding: 10px;
     line-height: 70px;
     position: relative;
+    z-index: 999;
 }
-.bg_btn_pink span{
+
+.bg_btn_pink span {
     color: #eaff00;
     font-size: 60px;
 }
-.bg_btn_pink img{
+
+.bg_btn_pink img {
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
     z-index: -1;
+}
+
+@media (max-width: 1350px) {
+    .icon_fly {
+        height: 15vh;
+        width: 15vh;
+    }
+
+}
+
+.header_mb,.content_mb,.footer_mb, .footer_mb_navigate {
+    display: none;
+}
+
+@media (max-width: 1099px) {
+    body {
+        background-image: url(./images/bg_mb.jpg);
+        background-size: 100% auto;
+        background-position: center;
+    }
+
+    .main,.icon_fly,.xu,
+    .person,.vertical_cen,
+    .xu_left,
+    .xu_right_bottom,
+    .poker_right_bottom,
+    .poker_right_bottom,
+    .block_dice,
+    .block_dice_top_right,
+    .block_dice_gold_right,.content {
+        display: none;
+    }
+    .header_mb,.content_mb,.footer_mb,.footer_mb_navigate{
+        display: block;
+    }
+    .header_mb{
+        width: 100vw;
+        position: absolute;
+        opacity: 0.8;
+    }
+    .content_mb{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+    .logo_mb{
+        width: 40vw;
+    }
+    .register_mb{
+        font-size: 40px;
+        font-weight: bold;
+        padding: 5px 40px;
+        border-radius: 100vw;
+        min-width: 40vw;
+        box-shadow: 0px 0px 4px 1px #000;
+    }
+    a.btn_vertical_register {
+        max-width: 35vw;
+    }
+    .account_title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .btn_dowload img,.btn_plays img{
+        height: 40px;
+    }
+    .left_title{
+        width: 20vw;
+        font-size: 1em;
+        line-height: 25px;
+    }
+    .footer_mb{
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+    }
+    .footer_mb_navigate{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 9999999;
+        background-color: #0a0e39;
+    }
+    .footer_mb_navigate > ul > li:hover{
+        opacity: 0.7;
+    }
+    .footer_mb_navigate > ul > li a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        text-align: center;
+    }
+    .item{
+        padding: 20px 0;
+    }
+    .last_item{
+        border-right: 2px solid #fff;
+    }
+    .first_item{
+        border-left: 2px solid #fff;
+    }
+}
+@media (max-width: 563px) {
+    .btn_dowload span, .btn_plays span{
+        padding: 0 5px;
+    }
 }
